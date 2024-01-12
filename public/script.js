@@ -152,11 +152,10 @@ const makeSocketConnection = async () => {
                 if (a.mistakes > b.mistakes) return 1;
             }
         });
-
+        rankBoardView.innerHTML = '';
         for (let i = 0; i < records.length; i++) {
             records[i].rank = i + 1;
             let record = records[i];
-            rankBoardView.innerHTML = '';
             let li = document.createElement('li');
             li.innerHTML = `<span>${record.rank}</span><span>${record.username}</span><span> WPM: ${record.wpm}</span><span> Mistakes: ${record.mistakes}</span>`;
             li.style.color = record.username === username ? 'green' : 'white';
