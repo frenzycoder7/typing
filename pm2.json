@@ -1,0 +1,9 @@
+{
+    "apps": [
+        {
+            "name": "typing_1: (9002)",
+            "script": "bun",
+            "args": "start"
+        }
+    ]
+}
