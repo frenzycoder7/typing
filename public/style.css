@@ -8,26 +8,30 @@
 body {
     display: flex;
     padding: 0 10px;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     min-height: 100vh;
-    background: #121212;
+    background: linear-gradient(180deg,rgba(238,244,247,0),#eef4f7 14.56%,#eef4f7 71.62%,rgba(238,244,247,0));;
 }
 #paragraph{
     color: #646669;
 }
 .result-details{
-    color: white;
+    color: black;
 }
 ::selection {
     color: #fff;
     background: #007acc;
 }
 .wrapper {
-    width: 80vw;
+    width: 70vw;
     padding: 35px;
     border-radius: 10px;
     box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+    /* border: 1px solid red; */
+    align-self: center;
+    background-color: white;
+    margin-left: 3vw;
 }
 .wrapper .input-field {
     opacity: 0;
@@ -93,11 +97,11 @@ body {
     border: none;
     width: 105px;
     color: #007acc;
-    padding: 8px 0;
-    font-size: 17px;
+    padding: 4px 0;
+    font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 5px;
     border: 2px solid #007acc;
     transition: transform 0.1s all ease;
     background: none;
@@ -106,7 +110,7 @@ body {
     transform: scale(0.89);
 }
 .content button:hover {
-    color: white;
+    /* color: ; */
 }
 .content .result-details {
     display: flex;
@@ -146,12 +150,64 @@ li:not(:first-child) span {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 10px 15px;
+    padding: 0px 10px;
     color: white;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 600;
     letter-spacing: 1px;
     transition: all 0.3s ease;
-    height: 60px;
+    height: 20px;
     width: 100%;
+}
+.ranking{
+    position: absolute;
+    right: 40px;
+    top: 150px;
+    color: white;
+    width: 20vw;
+    height: 70vh;
+    overflow-y: scroll;
+    /* border: 1px solid black; */
+}
+
+.ranking h2{
+    color:white;
+    display: flex;
+    background-color:#007acc;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.rankBoard{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.rankBoard li{
+    width: 100%;
+    height:30px;
+    list-style: none;
+    border-radius:5px ;
+    margin-top: 5px;
+    /* border: 1px solid white ; */
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rankBoard li span:nth-child(2){
+    /* margin-right: 10px; */
+    /* width: 25%; */
+    /* border: 1px solid black; */
+}
+
+.rankHeading{
+    color: white;
+    font-size: 16px;
+    background-color: #007acc;
+    display: flex;
+    justify-content: space-around;
+    /* gap: 20px; */
 }

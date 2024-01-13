@@ -157,8 +157,8 @@ const makeSocketConnection = async () => {
             records[i].rank = i + 1;
             let record = records[i];
             let li = document.createElement('li');
-            li.innerHTML = `<span>${record.rank}</span><span>${record.username}</span><span> WPM: ${record.wpm}</span><span> Mistakes: ${record.mistakes}</span>`;
-            li.style.color = record.username === username ? 'green' : 'white';
+            li.innerHTML = `<span>${record.rank}.</span><span>${record.username}</span><span> WPM: ${record.wpm}</span><span> Mistakes: ${record.mistakes}</span>`;
+            li.style.color = record.username === username ? 'green' : 'black';
             rankBoardView.appendChild(li);
         }
     });
